@@ -22,3 +22,11 @@ h2 {
 #reset {
   margin: 25px;
 }
+
+#save-btn {
+  margin: 25px;
+}
+
+#save-el {
+  font-size: 30px;
+}

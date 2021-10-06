@@ -1,19 +1,25 @@
 let countElement = document.getElementById("count");
+let saveElement = document.getElementById("save-el");
 
-const initialCount = 0;
 let count = 0;
 
 function increment() {
-  count = count + 1;
+  count += 1;
   countElement.innerText = count;
 }
 
 function decrement() {
-  count = count - 1;
+  count -= 1;
   countElement.innerText = count;
 }
 
-function reset() {
-  count = initialCount;
-  countElement.innerText = count;
+function save() {
+  let saveNumber = " " + count + " - ";
+  saveElement.textContent += saveNumber;
+  countElement.textContent = 0;
+  count = 0;
+}
+
+function resetEntry() {
+  saveElement.innerText = "Previous entries: ";
 }
