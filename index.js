@@ -1,12 +1,19 @@
-// document.getElementById("count").innerText = 5;
-
 let countElement = document.getElementById("count");
 
-console.log(countElement);
-
+const initialCount = 0;
 let count = 0;
 
 function increment() {
   count = count + 1;
+  countElement.innerText = count;
+}
+
+function decrement() {
+  count = count - 1;
+  countElement.innerText = count;
+}
+
+function reset() {
+  count = initialCount;
   countElement.innerText = count;
 }
